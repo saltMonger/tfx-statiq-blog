@@ -1,0 +1,25 @@
+<div class="tfx-card">
+    <div class="tfx-card-header"><span class="oi oi-calendar"></span> Archives</div>
+    <div class="tfx-card-body">
+        @foreach (IGrouping<int, IDocument> yearGroup in Outputs
+           .FromPipeline(nameof(Content))
+           .Flatten()
+           .FilterSources($"{Constants.BlogPath}/posts/*")
+           .Where(x => x.GetDateTime("Published").Year > 2000)
+           .GroupBy(x => x.GetDateTime("Published").Year)
+           .OrderByDescending(x => x.Key))
+        {
+            <h5 class="tfx-card-title">@(yearGroup.Key)</h5>
+            <div class="tfx-card-spacer"></div>
+            @foreach (IGrouping<(string, string), IDocument> monthGroup in yearGroup
+                .Where(doc => doc.GetDateTime("Published").Year > 2000)
+                .GroupBy(doc => (doc.GetDateTime("Published").ToString("MM"), doc.GetDateTime("Published").ToString("MMMM")))
+                .OrderByDescending(x => x.Key.Item1))
+            {
+                <a class="tfx-link-row mb-2" href="@Constants.BlogPath/@(yearGroup.Key)/@(monthGroup.Key.Item1)/">
+                    <div>@monthGroup.Key.Item2 (@monthGroup.Count())</div>
+                </a>
+            }
+        }
+    </div>
+</div>

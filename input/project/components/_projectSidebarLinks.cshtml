@@ -1,0 +1,16 @@
+﻿@using System.Text.RegularExpressions
+<div class="tfx-card">
+    <div class="tfx-card-header"><span class="oi oi-link-intact"</span> LINKS</div>
+    <div class="tfx-card-body">
+        @foreach (var link in Model.GetList<string>("Link"))
+        {
+            Regex fullLinkOnlyRegex = new Regex(@"^\[([\w\s\d]+)\]\((https?:\/\/[\w\d-./?=#]+)\)$");
+            var split = fullLinkOnlyRegex.Match(link);
+            <a class="tfx-link-row mb-2" href="@split.Groups[2]">
+                <div>
+                    @split.Groups[1]
+                </div>
+            </a>
+        }
+    </div>
+</div>

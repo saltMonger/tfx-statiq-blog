@@ -1,0 +1,39 @@
+﻿@inherits StatiqRazorPage<IEnumerable<IDocument>>
+@{
+    var groupModel = Model.Select((i, index) => new
+    {
+        i,
+        index
+    }).GroupBy(group => group.index / 3 , element => element.i);
+}
+
+@foreach (var group in groupModel)
+{
+    <div class="tfx-flex-row my-4 justify-content-center align-items-center">
+        @foreach (IDocument post in group)
+        {
+            @Html.Partial($"/{Constants.ProjectPath}/components/_projectCard.cshtml", post)
+        }
+    </div>
+}
+@{
+    IDocument older = Document.GetDocument(Keys.Next);
+    IDocument newer = Document.GetDocument(Keys.Previous);
+}
+@if (older != null || newer != null)
+{
+    <div class="d-flex flex-row justify-content-between">
+        <div>
+            @if (older != null)
+            {
+                <a class="btn btn-primary" href="@Context.GetLink(older)" role="button">Older</a>
+            }
+        </div>
+        <div>
+            @if (newer != null)
+            {
+                <a class="btn btn-primary" href="@Context.GetLink(newer)" role="button">Newer</a>
+            }
+        </div>
+    </div>
+}

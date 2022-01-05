@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        @Html.Partial("_partials/_head")
+        @RenderSection("head", required: false)
+        <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body class="main">
+        @Html.Partial("_partials/_header")
+        <main id="page_container" role="main" style="display: flex; flex-wrap: wrap;">
+            <section class="body-section">
+                <div class="body-container">
+                    @RenderBody()
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            @Html.Partial("_partials/_footer")
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+﻿ArchiveSources: => $"{Constants.ProjectPath}/projects/*"
+ArchiveDestination: >
+  => GetInt("Index") <= 1 ? $"{Constants.ProjectPath}/index.html" : $"{Constants.ProjectPath}/{GetInt("Index")}.html"
+ArchivePageSize: => @Constants.ProjectsPerPage
+ArchiveOrderKey: Published
+ArchiveOrderDescending: true
+Title: All Projects | seawaves // tfx
+ArchiveTitle: >
+  => $"{GetString("Title")}{(GetInt("Index") > 1 ? (" (Page " + GetInt("Index") + ")") : null)}"
+---
+@Html.Partial($"/{Constants.ProjectPath}/_projects.cshtml", Document.GetChildren())

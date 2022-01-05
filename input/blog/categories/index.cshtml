@@ -1,0 +1,18 @@
+﻿Title: Blog Categories | seawaves // tfx
+---
+@foreach (IDocument category in Outputs
+    .FromPipeline(nameof(Data))
+    .FilterSources($"{Constants.BlogPath}/categories/*")
+    .OrderBy(x => x.GetString("Title")))
+{
+    category.GetString("Title");
+    var link = category.GetLink().RemoveEnd(".yml"); //remove .yml from path
+    <a class="tfx-white-link mb-2" href="@link" class="list-group-item list-group-item-action @(link==Document.GetLink()?"active":"")">
+        <h1>
+            @category.GetTitle()
+        </h1>
+        <h3>
+            @category.GetString("Description") >>
+        </h3>
+    </a>
+}

@@ -1,0 +1,12 @@
+﻿<article class="col-md-4 d-flex align-self-stretch tfx-hover-trans">
+	<a class="d" href="@Context.GetLink(@Model).Substring(1)">
+		<div class="tfx-card align-self-stretch" >
+			<div class="tfx-card-header tfx-card-header-title">
+				@Model.GetString("Title")
+			</div>
+			<div class="tfx-card-body">
+				<img style="max-height: 300px !important;" src="@Model.GetString("Image")" />
+			</div>
+		</div>
+	</a>
+</article>
