@@ -1,12 +1,21 @@
 ﻿Title: Meat Meets Mouth
-Published: 2021-12-14
+Published: 2019-09-14
 Image: assets/img/projects/mmm/munch-crop.gif
 Type: Project
 Category: game
 Link:
-    - "[Youtube](https://www.youtube.com/watch?v=b9_Vh9h3Ohw)"
-    - "[Soundcloud](https://www.soundcloud.com/tfx-st)"
-    - "[Pouet](https://www.pouet.net/prod.php?which=90528)"
+  - "[itch io](https://saltmonger.itch.io/meat-meets-mouth)"
 ---
-# 7 Hour Game Jam
-Meat Meets Mouth is a bizarre 2D physics game that was designed, built, and tested in just 7 hours.  The game is available via an executable on itch.io, where it was submitted to a 7 hour long game jam where it placed 1st out of 3 games.  Code and music by myself, with additional code and all graphics by HomingDevice.
+## Meat Meets Mouth
+### 7 Hour Jam / Game Maker 
+TEAM: 
+tfx - Code, Music
+HomingDevice - Code, Art
+
+Meat Meets Mouth is a bizarre 2D physics game for Windows computers.
+
+Designed and built during a friendly 7 hour game jam where a group of friends and I were split into 3 random teams.  The theme for the jam was "Limited Palette" and a website was used to generate a 4 color palette to work with.
+
+We chose Game Maker (GM Studio 1.4) as a development platform as iteration is relatively quick, our team had licenses, and both of us were comfortable with Game Maker Language.  Both of us were able to contribute code and switch between tasks as necessary (e.g., produce music while the menu/score system was created, or create chicken nugget sprites while physics joints were being configured).
+
+Music was written as quickly as possible, using one take for each track (~10 minutes total time spent) - some of my highest quality work :)

@@ -1,11 +1,12 @@
-﻿<article class="col-md-4 d-flex align-self-stretch tfx-hover-trans">
-	<a class="d" href="@Context.GetLink(@Document).Substring(1)">
+﻿@model IDocument
+<article class="col-md-4 d-flex align-self-stretch tfx-hover-trans">
+	<a class="d" href="@($"{Context.GetLink(Model)}.html")">
 		<div class="tfx-card align-self-stretch" >
 			<div class="tfx-card-header tfx-card-header-title">
-				@Document.GetString("Title")
+				@Model.GetTitle()
 			</div>
 			<div class="tfx-card-body">
-				<img style="max-height: 300px !important;" src="@Document.GetString("Image")" />
+				<img style="max-height: 300px !important;" src="@Model.GetString("Image")" />
 			</div>
 		</div>
 	</a>

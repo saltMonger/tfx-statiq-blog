@@ -12,6 +12,7 @@
     <div class="tfx-flex-row my-4 justify-content-center align-items-center">
         @foreach (IDocument post in group)
         {
+            Console.WriteLine("Post: " + post.GetTitle());
             @Html.Partial($"/{Constants.ProjectPath}/components/_projectCard.cshtml", post)
         }
     </div>
