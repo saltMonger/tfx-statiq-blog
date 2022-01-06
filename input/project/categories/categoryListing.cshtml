@@ -8,6 +8,7 @@ ArchiveOrderDescending: true
 Title: Categories
 ArchiveTitle: => Outputs[$"{Constants.ProjectPath}/categories/{GetString("GroupKey")}.yml"].First().GetString("Title")
 ---
+@model IDocument
 @if (Document.ContainsKey(Keys.GroupKey))
 {
     <h1>@(Outputs[$"{Constants.ProjectPath}/categories/{Document.GetString(Keys.GroupKey)}.yml"].First().GetString("Title"))</h1>
