@@ -32,6 +32,7 @@
     }
 </div>
 
+<br />
 @{
     IDocument older = Document.GetDocument(Keys.Next);
     IDocument newer = Document.GetDocument(Keys.Previous);
@@ -42,14 +43,17 @@
         <div>
             @if (older != null)
             {
-                <a class="btn btn-primary" href="@Context.GetLink(older)" role="button">Older</a>
+                <a class="tfx-btn tfx-btn-teal" href="@Context.GetLink(older)" role="button">&lt;&lt; Older</a>
             }
         </div>
         <div>
             @if (newer != null)
             {
-                <a class="btn btn-primary" href="@Context.GetLink(newer)" role="button">Newer</a>
+                <a class="tfx-btn tfx-btn-teal" href="@Context.GetLink(newer)" role="button">Newer >></a>
             }
         </div>
     </div>
 }
+
+<br/>
+<br/>
