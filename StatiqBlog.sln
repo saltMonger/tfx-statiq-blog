@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatiqBlog", "StatiqBlog.csproj", "{DE972B72-D5AA-4E06-AB57-F33DEE70F68A}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "tfx-statiq-backend", "..\tfx-statiq-backend\tfx-statiq-backend.njsproj", "{272318E7-83D8-4991-B966-8D0D02485A99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DE972B72-D5AA-4E06-AB57-F33DEE70F68A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE972B72-D5AA-4E06-AB57-F33DEE70F68A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE972B72-D5AA-4E06-AB57-F33DEE70F68A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272318E7-83D8-4991-B966-8D0D02485A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272318E7-83D8-4991-B966-8D0D02485A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272318E7-83D8-4991-B966-8D0D02485A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272318E7-83D8-4991-B966-8D0D02485A99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
