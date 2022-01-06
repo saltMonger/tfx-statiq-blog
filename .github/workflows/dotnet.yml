@@ -29,7 +29,7 @@ jobs:
         password: ${{ secrets.DeployPassword }}
         local-dir: ./output/
         server-dir: ${{ secrets.DeployDir }}
-        
+        protocol: ftps
     
 env:
   NodeEnv: ${{ secrets.NODE_ENV }}
