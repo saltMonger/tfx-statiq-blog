@@ -1,0 +1,35 @@
+name: Site Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: main
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Build
+      run: dotnet run --no-restore
+    - name: Deploy
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        server: ${{ secrets.DeployServer}}
+        username: ${{ secrets.DeployUsername }}
+        password: ${{ secrets.DeployPassword }}
+        local-dir: ./output/
+        server-dir: ${{ secrets.DeployDir }}
+        
+    
+env:
+  NodeEnv: ${{ secrets.NODE_ENV }}
