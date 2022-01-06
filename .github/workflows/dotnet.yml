@@ -20,7 +20,7 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Build
-      run: dotnet run -- preview
+      run: dotnet run -- deploy
     - name: Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
