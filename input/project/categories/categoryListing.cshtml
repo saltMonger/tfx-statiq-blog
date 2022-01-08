@@ -2,16 +2,16 @@
 ArchiveKey: Category
 ArchiveDestination: >
   => GetInt("Index") <= 1 ? $"{Constants.ProjectPath}/categories/{GetString("GroupKey")}/index.html" : $"{Constants.ProjectPath}/categories/{GetString("GroupKey")}/{GetInt("Index")}.html"
-ArchivePageSize: => @Constants.PostsPerPage
+ArchivePageSize: => @Constants.ProjectsPerPage
 ArchiveOrderKey: Published
 ArchiveOrderDescending: true
 Title: Categories
 ArchiveTitle: => Outputs[$"{Constants.ProjectPath}/categories/{GetString("GroupKey")}.yml"].First().GetString("Title")
 ---
 @if (Document.ContainsKey(Keys.GroupKey))
-{
-    <h1>@(Outputs[$"{Constants.ProjectPath}/categories/{Document.GetString(Keys.GroupKey)}.yml"].First().GetString("Title"))</h1>
-    <p>@(Outputs[$"{Constants.ProjectPath}/categories/{Document.GetString(Keys.GroupKey)}.yml"].First().GetString("Description"))</p>
+    {
+    <h1>@(Outputs[$"{Constants.ProjectPath}/categories/{Document.GetList<string>(Keys.GroupKey).First()}.yml"].First().GetString("Title"))</h1>
+    <p>@(Outputs[$"{Constants.ProjectPath}/categories/{Document.GetList<string>(Keys.GroupKey).First()}.yml"].First().GetString("Description"))</p>
     <hr class="my-4" style="border-color: #eee;" />
     @Html.Partial($"/{Constants.ProjectPath}/_projects.cshtml", Document.GetChildren())
 }

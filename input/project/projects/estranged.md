@@ -2,7 +2,8 @@
 Published: 2020-10-23
 Image: assets/img/projects/estranged/estranged-crop.gif
 Type: Project
-Category: game
+Category: 
+  - game
 Link:
   - "[itch io](https://saltmonger.itch.io/meat-meets-mouth)"
 ---

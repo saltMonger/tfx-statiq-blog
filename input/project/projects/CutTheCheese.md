@@ -1,14 +1,28 @@
 ﻿Title: Cut the Cheese Simulator
-Published: 2021-12-14
+Published: 2021-05-03
 Image: assets/img/projects/cheese/cheese-crop.gif
 Type: Project
 Category: game
 Link:
-    - "[Youtube](https://www.youtube.com/watch?v=b9_Vh9h3Ohw)"
-    - "[Soundcloud](https://www.soundcloud.com/tfx-st)"
-    - "[Pouet](https://www.pouet.net/prod.php?which=90528)"
+  - "[itch io](https://zoped.itch.io/who-cut-the-cheese)"
 ---
-### tic80 demo
+## Cut the Cheese Simulator
+### 10 Day Game Jam // Unity
 
-Compofiller Compound is the miracle cream that will solve all your problems! This is a tic80 demo that was written in a week, in place of a much larger demo that was not ready for entry into a competition. This particular entry was finished in the hardware room of Xenium 2019 in Katowice, Poland, just 10 minutes before deadline. It placed 2nd out of 6 entries in the Wild Compo, which includes all entries that don't fit another competition (rendered animations, films and videos, or people dancing live). This demo is available on pouet, where it can be downloaded as the original party archive which includes the tools necessary to run it.
+Cut the Cheese Simulator is a tongue in cheek not-quite-cheese production simulator.
 
+TEAM:
+- tfx: Code, Music, UI
+- SonderGaming: Code, Art, Level Design, Tutorialization
+- Zope: Code, VFX
+- Hiij: Art
+- Xuubasa: Code
+
+Designed and built for the Jamulator 2021 game jam, where it ranked 1st out of 94 entries.  The constraint for the game jam was to create games in a "Simulation" genre.
+
+This was a breakaway success that taught us how valuable tutorialization and level design is in game development.  Much of the success and enjoyment we attribute to very clear game play and good scaling of difficulty that shows you how to play the game without throwing prompt after prompt at you.
+
+This game saw the development of several concepts and internal libraries that we continue to use today, including:
+ - Task management and tracking:  A scene level manager watches for task conditions which are configured per level by ScriptableObjects.  This allows level designers to quickly specify and tune level difficulty and included  mechanics.  This level manager integrates with the next system,
+ - World UI based on Unity UIXML:  Leveraging upcoming technology, a display is programmatically created using an XML language similar to XAML.  Elements are styled using a variation of CSS called USS.  The Task management component notifies the UI to update and reflows UI components as necessary.
+ - Abstract interaction system: Robust and extensible situation that allows for game objects to follow common interaction  code as well as execute specialized logic.  This allowed for changes to be made across the entire game to update the UI dynamically when looking at objects with displayable information in 4 lines of code.

@@ -136,10 +136,11 @@ Title: => $"{Constants.SiteTitle}"
         <h2 class="display-4 text-center">CONTACT ME</h2>
         <hr class="my-4" />
         <div class="row">
-            <div class="text-center col-md-8 offset-md-2 tfx-article-text">
-                <p>
+            <div class="col-md-8 offset-md-2 tfx-article-text">
+                <p class="text-center">
                     Interested in working on some project together? Need music for a game, video, or something else? Just want to tell me you've received an unbelievably complex do-it-yourself meal kit from Japan? Let me know by using the form below.
                 </p>
+                @Html.Partial("/_partials/_contactForm.cshtml")
             </div>
         </div>
     </div>
