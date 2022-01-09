@@ -1,26 +1,46 @@
-﻿@{
+﻿@using System.Text.RegularExpressions
+@{
     Layout = @"/_layout.cshtml";
 }
 @{
-    IDocument topicDocument = Outputs[$"{Constants.ProjectPath}/{Model.GetString("Titles")}/index.html"].First();
+    List<string> categories = Model.GetList<string>("Category")?.ToList() ?? new List<string>() { Model.GetString("Category")};
+    List<string> images = Model.GetList<string>("Gallery")?.ToList() ?? new List<string>();
+    IDocument[] topicDocument = categories.Select(c => Outputs[$"{Constants.ProjectPath}/categories/{c}.yml"].First()).ToArray();
     <section class="page-section">
         <div class="row">
             <div class="col-12">
                 <article class="post">
                     <header>
                         <h1 itemprop="headline name" class="tfx-text-primary">@Model.GetTitle()</h1>
-                        <div class="bh">
+                        <h3 class="tfx-text-primary">@Model.GetString("Tagline")</h3>
+                        <h4 class="bh">
                             <time datetime="@Model.GetString("Published")" itemprop="datePublished">@Model.GetDateTime("Published").ToString("MMMM dd, yyyy")</time>
-                            @if (topicDocument != null)
+                            @foreach (var topic in topicDocument)
                             {
-                                <a href="@(topicDocument.GetLink())"><span class="badge badge-light">@topicDocument.GetTitle()</span></a>
+                                <a href="@($"{Constants.ProjectPath}/categories/{topic.GetString("Link")}/")"><span class="badge badge-light">@topic.GetString("Title")</span></a>
                             }
-                        </div>
+                        </h4>
                     </header>
                     <hr />
-                    <div itemprop="articleBody">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="@Model.GetString("HeroImage")" style="max-width: 100%;"/>
+                        </div>
+                    </div>
+                    <div class="tfx-article-body" itemprop="articleBody">
                         @RenderBody()
                     </div>
+                    
+                    @if (images.Any())
+                    {
+                        <hr />
+                        @Html.Partial("_partials/_imageGallery", images)
+                        <br />
+                        <br />
+                        <br />
+                    }
+
+
                     <div class="collapse" aria-hidden="true" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
                         <meta itemprop="name" content="@Model.GetString("Author")">
                     </div>
@@ -35,3 +55,9 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="@Model.GetTitle()">
 }
+
+<div class="tfx-modal" id="modal">
+    <span class="close-modal">&times;</span>
+    <img class="tfx-modal-content" id="modalimg">
+    <div id="caption"></div>
+</div>

@@ -9,7 +9,11 @@ Title: => $"{Constants.SiteTitle}"
 <div class="tfx-purple-section">
     <div class="container-fluid">
         <h1 class="display-4 text-center">I'm tfx</h1>
-        <p class="lead text-center">Dolor sit amet.</p>
+        <div class="row align-items-center justify-content-center text-center">
+            <div class="col-md-4">
+                <img style="border-radius: 50%;" src="assets/img/me.png" />
+            </div>
+        </div>
         <hr class="my-4">
     </div>
 </div>
@@ -44,7 +48,7 @@ Title: => $"{Constants.SiteTitle}"
                     <div class="col-md-4 tfx-main-pg-block">
                         <div class="tfx-main-pg-header">
                             <a href="@($"/{Constants.ProjectPath}/categories/web/")">
-                                <img class="tfx-main-pg-img" src="assets/img/projects/sij/plasmacubes.gif" />
+                                <img class="tfx-main-pg-img" src="assets/img/projects/portfolio/portfolio.png" />
                                 <div class="tfx-main-pg-img-txt">
                                     <p>Web Projects</p>
                                 </div>
@@ -66,9 +70,9 @@ Title: => $"{Constants.SiteTitle}"
             <div class="text-center col-md-8 offset-md-2 tfx-article-text">
                 <p>I'm also a musician who enjoys writing authentic chiptune music using real hardware. In the spring and fall I play in local concert bands as a mallet percussionist.</p>
                 <div class="row">
-                       <div class="col-md-6 tfx-main-pg-block">
+                    <div class="col-md-6 tfx-main-pg-block">
                         <div class="tfx-main-pg-header">
-                            <a href="/">
+                            <a href="@($"/{Constants.ProjectPath}/categories/soundtrack/")">
                                 <img class="tfx-main-pg-img" src="assets/img/projects/soundtracks/IronDroughtAlbum.png" />
                                 <div class="tfx-main-pg-img-txt">
                                     <p>Soundtracks</p>
@@ -76,9 +80,16 @@ Title: => $"{Constants.SiteTitle}"
                             </a>
                         </div>
                     </div>
-                                        <a class="col-md-6">
-                        <img style="width: 100%;" src="assets/img/projects/sij/plasmacubes.gif" />
-                    </a>
+                    <div class="col-md-6 tfx-main-pg-block">
+                        <div class="tfx-main-pg-header">
+                            <a href="@($"/{Constants.ProjectPath}/categories/compotunes/")">
+                                <img class="tfx-main-pg-img" src="assets/img/projects/atariTrilogy/loni_Industry_Plant.png" />
+                                <div class="tfx-main-pg-img-txt">
+                                    <p>Competition Music</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <br/>
                 <a class="tfx-btn-teal tfx-btn btn-lg" href="/@Constants.ProjectPath/" role="button">All Projects >></a>
@@ -95,7 +106,7 @@ Title: => $"{Constants.SiteTitle}"
                 @foreach(var post in Document.GetChildren().Take(3))
                 {
                     IDocument topicDocument = OutputPages[$"{Constants.BlogPath}/categories/{post.GetString("Category")}/index.html"].First();
-                    string excerpt = post.GetString(Statiq.Html.HtmlKeys.Excerpt);
+                    string excerpt = post.GetString(Keys.Excerpt);
                     excerpt = excerpt.RemoveEnd("</p>"); //remove final '</p>'
                     var words = excerpt.Split().Take(50); //only interested in first 50 words, so add them to array
                     excerpt = string.Join(" ", words); //rejoin the words as single string
