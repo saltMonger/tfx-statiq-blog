@@ -1,12 +1,11 @@
 ﻿$(document).ready(() => {
     $('.toast').toast({ autohide: true, delay: 3000 });
-    let form = document.querySelector("#submitButton");
-
-    let page = window.location.href;
-    form.addEventListener("click", handleSubmit, false);
+    let form = document.querySelector("#contact-me");
+    form.addEventListener("submit", handleSubmit);
 
     function handleSubmit(e) {
         e.preventDefault();
+        e.stopPropagation();
         let request = new XMLHttpRequest();
         let messageData = {
             email: document.getElementById("emailInput").value,
@@ -30,5 +29,6 @@
         request.setRequestHeader("Content-type", "application/json");
         let payload = JSON.stringify(messageData)
         request.send(payload);
+        return false;
     }
 })
