@@ -4,9 +4,9 @@
     <div class="tfx-card-body">
         @foreach (var link in Model.GetList<string>("Link"))
         {
-            Regex fullLinkOnlyRegex = new Regex(@"^\[([\w\s\d]+)\]\((https?:\/\/[\w\d-./?=#]+)\)$");
+            Regex fullLinkOnlyRegex = new Regex(@"^\[([\w\s\d-./?=#,""]+)\]\((https?:\/\/[\w\d-./?=#]+)\)$");
             var split = fullLinkOnlyRegex.Match(link);
-            <a class="tfx-link-row mb-2" href="@split.Groups[2]">
+            <a class="tfx-link-row mb-2" href="@split.Groups[2]" target="_blank" rel="noopener noreferrer">
                 <div>
                     @split.Groups[1]
                 </div>

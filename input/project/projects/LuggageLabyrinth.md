@@ -1,14 +1,30 @@
 ﻿Title: Luggage Labyrinth
-Published: 2021-12-14
+Tagline:  8 Day Game Jam // Unity
+Published: 2021-04-07
 Image: assets/img/projects/luggage/lug-crop.gif
+HeroImage: assets/img/projects/luggage/hero.png
 Type: Project
-Category: game
+Category: 
+  - game
+  - soundtrack
+Gallery:
+  - "[Player1][A battle commences](assets/img/projects/luggage/lug.gif)"
+  - "[Player2][The player is attacked by a troop of possessed shirts](assets/img/projects/luggage/shirts1.png)"
+  - "[Player3][A gauntlet to the exit](assets/img/projects/luggage/exit.png)"
 Link:
-    - "[Youtube](https://www.youtube.com/watch?v=b9_Vh9h3Ohw)"
-    - "[Soundcloud](https://www.soundcloud.com/tfx-st)"
-    - "[Pouet](https://www.pouet.net/prod.php?which=90528)"
+    - "[Itch.io](https://saltmonger.itch.io/luggage-labyrinth)"
+    - "[Soundtrack Bandcamp](https://seawaves.bandcamp.com/album/luggage-labyrinth-ost)"
+    - "[Jam Page](https://itch.io/jam/dcjam2021)"
 ---
-### tic80 demo
+Airport baggage claims crawler.
 
-Compofiller Compound is the miracle cream that will solve all your problems! This is a tic80 demo that was written in a week, in place of a much larger demo that was not ready for entry into a competition. This particular entry was finished in the hardware room of Xenium 2019 in Katowice, Poland, just 10 minutes before deadline. It placed 2nd out of 6 entries in the Wild Compo, which includes all entries that don't fit another competition (rendered animations, films and videos, or people dancing live). This demo is available on pouet, where it can be downloaded as the original party archive which includes the tools necessary to run it.
+TEAM:
+-  tfx: Code, Music
+- Zope: Code, VFX
+- Xuubasa: Code
+- SonderGaming: Art
+- Hiij: Art
 
+Luggage Labyrinth was designed for the 2021 Dungeon Crawler Jam.  The jam focused on building traditional, grid based dungeon crawlers in the proto-CRPG style.  Interested in trying a setting other than the standard dank dungeon, the team decided in the planning meeting to use a "modern but weird" setting.  Thus, a baggage claim haunted by all of those who have fallen onto the conveyor belt...
+
+This game jam saw our first attempt at using an additive scene loading approach, where the overworld (that is, the conveyors, grinders, and baggage) would be overlaid with a combat scene when the player encounters the enemy.  This caused issues near the end of the jam due to complications with script run order when setting up the combat scene, but the end result is mostly playable.  Be sure to avoid attacking empty slots!

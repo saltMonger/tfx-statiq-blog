@@ -1,14 +1,27 @@
 ﻿Title: BotBuilder
-Published: 2021-12-14
+Tagline: 2 Week Jam // HaxeFlixel
+Published: 2020-06-14
 Image: assets/img/projects/botbuilder/botbb-crop.gif
+HeroImage: assets/img/projects/botbuilder/hero.png
 Type: Project
-Category: game
+Category: 
+	- game
+Gallery:
+  - "[Player1][A player starts with a blank slate](assets/img/projects/botbuilder/botbb.gif)"
+  - "[Player2][Ore extractor facilities and power plants are deployed](assets/img/projects/botbuilder/buildMode.png)"
+  - "[Player3][Desert metal refineries, an upgraded market, and the trade interface being set](assets/img/projects/botbuilder/marketMode.png)"
 Link:
-    - "[Youtube](https://www.youtube.com/watch?v=b9_Vh9h3Ohw)"
-    - "[Soundcloud](https://www.soundcloud.com/tfx-st)"
-    - "[Pouet](https://www.pouet.net/prod.php?which=90528)"
+  - "[Battle of the Bits](https://battleofthebits.org/arena/Entry/BotBuilder/35912/)"
+  - "[itch io](https://metriczero.itch.io/lute-this)"
 ---
-### tic80 demo
+BotBuilder (Pronounced "bot-buh-builder") is a somewhat arcane "city builder" game where the player must produce a golden badge without running out of resources.
 
-Compofiller Compound is the miracle cream that will solve all your problems! This is a tic80 demo that was written in a week, in place of a much larger demo that was not ready for entry into a competition. This particular entry was finished in the hardware room of Xenium 2019 in Katowice, Poland, just 10 minutes before deadline. It placed 2nd out of 6 entries in the Wild Compo, which includes all entries that don't fit another competition (rendered animations, films and videos, or people dancing live). This demo is available on pouet, where it can be downloaded as the original party archive which includes the tools necessary to run it.
+TEAM:
+- tfx: Music, Code
+- Metric: Art
 
+Designed for the 4th Battle of the Bits game jam.  The theme was to use the sprite sheet for battle of the bits (all icons on the site, including format badges, buttons, etc.), and produce a game that runs in HTML5 over 2 weeks.  BotBuilder received 6th place overall.
+
+BotBuilder is built on HaxeFlixel, a very lightweight framework that is well suited to both the web environment as well as 2D games.  This was my first attempt at both Haxe, the language, and Flixel, the framework, which amounted to a moderate success.  I chose HaxeFlixel as the framework of choice because exports were well under the strict limit of ~20 MBs (final export was 4 MB, with 9 kB HTML manual).
+
+Leaning into Battle of the Bit's quirky and often arcane nature, I designed the interface to allow full use of the keyboard.  And only the keyboard.  A manual is absolutely required to play the game.  Good luck!

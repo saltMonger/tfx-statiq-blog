@@ -1,14 +1,30 @@
 ﻿Title: Crab Bungalow
-Published: 2021-12-14
+Tagline:  7 Day Game Jam // Unity
+Published: 2021-02-21
 Image: assets/img/projects/crab/crab-crop.gif
+HeroImage: assets/img/projects/crab/env1.png
 Type: Project
-Category: game
+Category: 
+  - game
+Gallery:
+  - "[Player1][Crabs massing to break wall down](assets/img/projects/crab/wall1.png)"
+  - "[Player2][The ocean and the island](assets/img/projects/crab/crab.gif)"
+  - "[Player3][Crabs transporting fish around a lava lake](assets/img/projects/crab/lava1.png)"
 Link:
-    - "[Youtube](https://www.youtube.com/watch?v=b9_Vh9h3Ohw)"
-    - "[Soundcloud](https://www.soundcloud.com/tfx-st)"
-    - "[Pouet](https://www.pouet.net/prod.php?which=90528)"
+  - "[Itch.io](https://saltmonger.itch.io/crab-bungalow)"
+  - "[V2 Devlog](https://saltmonger.itch.io/crab-bungalow/devlog/234333/v2-polish)"
 ---
-### tic80 demo
+A short island exploration game featuring a squad of helpful crabs.
 
-Compofiller Compound is the miracle cream that will solve all your problems! This is a tic80 demo that was written in a week, in place of a much larger demo that was not ready for entry into a competition. This particular entry was finished in the hardware room of Xenium 2019 in Katowice, Poland, just 10 minutes before deadline. It placed 2nd out of 6 entries in the Wild Compo, which includes all entries that don't fit another competition (rendered animations, films and videos, or people dancing live). This demo is available on pouet, where it can be downloaded as the original party archive which includes the tools necessary to run it.
+TEAM:
+- tfx: Code, Music
+- Zope: Code, VFX
+- Xuubasa: Code
+- SandAll: Code
+- Metric: Art, Misc. FX
 
+Crab Bungalow was developed for Brackeys 2021.1 jam, a seven day game jam with the theme "Stronger Together."  The team decided to develop a Pikmin styled game where the player gathers hordes of crabs and commands them to solve various puzzles.
+
+I wrote audio code to support the unfolding narrative of the game, including audio zones to handle advancement of the soundtrack, as well as multiple background music zones.
+
+This was the first game jam that the team had worked on to extend after the jam deadline, with a second version seeing a completely redesigned island, dialogue system, and tutorial.  Additional work was done to rewrite the core crab AI, as well as produce an interactable system which is the basis for our current game jam library.

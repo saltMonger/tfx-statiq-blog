@@ -22,11 +22,18 @@
                         </h4>
                     </header>
                     <hr />
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <img src="@Model.GetString("HeroImage")" style="max-width: 100%;"/>
+                    @if (!string.IsNullOrWhiteSpace(Model.GetString("HeroImage")))
+                    {
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <img src="@Model.GetString("HeroImage")" style="max-width: 100%;"/>
+                            </div>
                         </div>
-                    </div>
+                    }
+
+                    <br />
+                    <br />
+
                     <div class="tfx-article-body" itemprop="articleBody">
                         @RenderBody()
                     </div>

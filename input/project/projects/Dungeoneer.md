@@ -1,14 +1,34 @@
 ﻿Title: Dungeoneer
-Published: 2021-12-14
+Tagline:  7 Day Game Jam // Unity
+Published: 2021-07-24
 Image: assets/img/projects/dungeoneer/scroll-crop.gif
+HeroImage: 
 Type: Project
-Category: game
+Category: 
+  - game
+  - soundtrack
+Gallery:
+  - "[Player1][A scroll floats nearby, promising power...](assets/img/projects/dungeoneer/scroll.gif)"
+  - "[Player2][Album art featuring the Mystix sigil](assets/img/projects/dungeoneer/dungeoneer2.png)"
+  - "[Player3][Vlad wants a blood snack](assets/img/projects/dungeoneer/vlad1.gif)"
 Link:
-    - "[Youtube](https://www.youtube.com/watch?v=b9_Vh9h3Ohw)"
-    - "[Soundcloud](https://www.soundcloud.com/tfx-st)"
-    - "[Pouet](https://www.pouet.net/prod.php?which=90528)"
+  - "[Itch.io](https://saltmonger.itch.io/dungeoneer)"
+  - "[Youtube Trailer](https://youtu.be/o_lmlnmiF38)"
+  -  "[Soundtrack Bandcamp](https://seawaves.bandcamp.com/album/dungeoneer-ost)"
+  - "[Jam Page](https://itch.io/jam/bored-pixels-jam-8)"
 ---
-### tic80 demo
+Dungeon cleanup simulation.
 
-Compofiller Compound is the miracle cream that will solve all your problems! This is a tic80 demo that was written in a week, in place of a much larger demo that was not ready for entry into a competition. This particular entry was finished in the hardware room of Xenium 2019 in Katowice, Poland, just 10 minutes before deadline. It placed 2nd out of 6 entries in the Wild Compo, which includes all entries that don't fit another competition (rendered animations, films and videos, or people dancing live). This demo is available on pouet, where it can be downloaded as the original party archive which includes the tools necessary to run it.
+TEAM:
+-  tfx: Code, Music, UI
+- Zope: Code, VFX
+- SonderGaming: Code, Art
+- Lou: Art, Design 
+- Xuubasa: Code
+- Moose: Code
 
+Dungeoneer was designed for the 8th Bored Pixels Jam, a 7 day game jam with the theme "You are not the hero."  Our team decided early on that we wanted an experience outside of an anti hero or big bad - we wanted something that would take a look at the mundane.  Thus, the player takes on the role of a dungeon janitor, resetting the many rooms and calming creatures to ready the dungeon for the next hero.  
+
+This jam saw further refinement of our task system, and a new piece of library technology: the GameManager.  This allowed us to employ a common menu to each scene which would later be expanded to enable options, a help screen, and credits.  The GameManager also allowed progressive level loading, and tied into the TaskManager system to allow scoring.
+
+I wrote the music for this game on my Yamaha TG100, a small, 1990's desktop ROMpler unit, and contributed a large portion of the sound design and foley work.

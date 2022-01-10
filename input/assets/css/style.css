@@ -465,7 +465,7 @@ body.main {
 
 .close-modal {
     position: absolute;
-    top: 0.4em;
+    top: 1em;
     right: 1em;
     color: #f1f1f1;
     font-size: 400%;

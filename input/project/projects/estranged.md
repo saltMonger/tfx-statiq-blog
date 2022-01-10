@@ -12,9 +12,6 @@ Gallery:
 Link:
   - "[itch io](https://saltmonger.itch.io/meat-meets-mouth)"
 ---
-## Estranged
-### 3 Day Jam / Unity
-
 Estranged is an emotional story telling experience with heavy themes of manipulation and actualization.
 
 TEAM: 
