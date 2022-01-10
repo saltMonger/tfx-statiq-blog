@@ -3,12 +3,9 @@
 <div class="row align-items-center justify-content-center">
     @foreach (var img in @Model)
     {
-        Console.Write("img: " + img + "  ");
         var reg = @"^\[([\w\s\d-./?=#,""]+)\]\[([\w\s\d-./?=#,""]+)\]\(([\w\d-./?=#]+)\)$";
-        Console.WriteLine(reg);
         Regex fullLinkOnlyRegex = new Regex(reg);
         var split = fullLinkOnlyRegex.Match(img);
-        Console.WriteLine("Split count: " + split.Groups.Count);
         (string imgId, string caption, string link) mod = (split.Groups[1].ToString(), split.Groups[2].ToString(), split.Groups[3].ToString());
         @Html.Partial("_partials/_expandImage", mod)
     }

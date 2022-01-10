@@ -1,4 +1,5 @@
-﻿@inherits StatiqRazorPage<IEnumerable<IDocument>>
+﻿@using System.Text.RegularExpressions
+@inherits StatiqRazorPage<IEnumerable<IDocument>>
 @{
     var groupModel = Model.Select((i, index) => new
     {
@@ -22,6 +23,7 @@
 @{
     IDocument older = Document.GetDocument(Keys.Next);
     IDocument newer = Document.GetDocument(Keys.Previous);
+    Regex lastNumberReg = new Regex(@"\d");
 }
 @if (older != null || newer != null)
 {
@@ -29,13 +31,13 @@
         <div>
             @if (older != null)
             {
-                <a class="tfx-btn tfx-btn-teal" href="@Context.GetLink(older)" role="button">&lt;&lt;Older</a>
+                <a class="tfx-btn tfx-btn-teal" href="@(!lastNumberReg.IsMatch(Context.GetLink(older).Last().ToString()) ? Context.GetLink(older) : Context.GetLink(older) + ".html")" role="button">&lt;&lt;Older</a>
             }
         </div>
         <div>
             @if (newer != null)
             {
-                <a class="tfx-btn tfx-btn-teal" href="@Context.GetLink(newer)" role="button">Newer >></a>
+                <a class="tfx-btn tfx-btn-teal" href="@(!lastNumberReg.IsMatch(Context.GetLink(newer).Last().ToString()) ? Context.GetLink(newer) : Context.GetLink(newer) + ".html")" role="button">Newer >></a>
             }
         </div>
     </div>
