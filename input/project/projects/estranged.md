@@ -2,15 +2,16 @@
 Tagline: 3 Day Jam // Unity
 Published: 2020-10-23
 Image: assets/img/projects/estranged/estranged-crop.gif
-HeroImage: assets/img/projects/estranged/estranged.gif
+HeroImage: assets/img/projects/estranged/hero.png
 Type: Project
 Category: 
   - game
-  - soundtrack
 Gallery:
   - "[Player1][The player embarks on their journey](assets/img/projects/estranged/estranged.gif)"
+  - "[Player2][The player readies the spaceship](assets/img/projects/estranged/spaceship.png)"
+  - "[Player3][The world awaits...](assets/img/projects/estranged/sky.png)"
 Link:
-  - "[itch io](https://saltmonger.itch.io/meat-meets-mouth)"
+  - "[Itch.io](https://metriczero.itch.io/estrange)"
 ---
 Estranged is an emotional story telling experience with heavy themes of manipulation and actualization.
 

@@ -1,6 +1,11 @@
 <div class="tfx-card">
     <div class="tfx-card-header"><span class="oi oi-folder"></span> Categories</div>
     <div class="tfx-card-body">
+        <a class="tfx-link-row mb-2" href="@Constants.BlogPath")">
+            <div>
+                All
+            </div>
+        </a>
         @foreach (IDocument category in Outputs
            .FromPipeline(nameof(Data))
            .FilterSources($"{Constants.BlogPath}/categories/*")
@@ -8,7 +13,7 @@
         {
             category.GetString("Title");
             var link = category.GetLink().RemoveEnd(".yml"); //remove .yml from path
-            <a class="tfx-link-row mb-2" href="@link" class="list-group-item list-group-item-action @(link==Document.GetLink()?"active":"")">
+            <a class="tfx-link-row mb-2" href="@link">
                 <div>
                     @category.GetTitle()
                 </div>

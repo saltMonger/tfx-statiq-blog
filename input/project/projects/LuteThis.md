@@ -13,7 +13,7 @@ Gallery:
   - "[Player3][Coins rain down on the player](assets/img/projects/lute/makeItRain.png)"
 Link:
   - "[Bandcamp](https://seawaves.bandcamp.com/album/lute-this-ost)"
-  - "[itch io](https://metriczero.itch.io/lute-this)"
+  - "[Itch.io](https://metriczero.itch.io/lute-this)"
 ---
 Lute This! is a rhythm game where you perform for a crowd, and pick up the fruits of your busking!
 

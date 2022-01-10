@@ -1,6 +1,11 @@
 ﻿<div class="tfx-card">
     <div class="tfx-card-header"><span class="oi oi-folder"></span> Categories</div>
     <div class="tfx-card-body">
+        <a class="tfx-link-row mb-2" href="@(Constants.ProjectPath)">
+            <div>
+                All
+            </div>
+        </a>
         @foreach (IDocument category in Outputs
            .FromPipeline(nameof(Data))
            .FilterSources($"{Constants.ProjectPath}/categories/*")

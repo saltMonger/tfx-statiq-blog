@@ -1,14 +1,30 @@
-﻿Title: Nirengeki
-Published: 2021-12-14
+﻿Title: "Nirengeki: Double Strike"
+Tagline:  2 Day Game Jam // Unity
+Published: 2021-06-13
 Image: assets/img/projects/nirengeki/niren-crop.gif
+HeroImage: assets/img/projects/nirengeki/hero.png
 Type: Project
-Category: game
+Category: 
+  - game
+Gallery:
+  - "[Player1][Bullets from bizarre enemies fill space](assets/img/projects/nirengeki/niren.gif)"
+  - "[Player2][Title screen](assets/img/projects/nirengeki/title.png)"
+  - "[Player3][A powerful boss challenges the player](assets/img/projects/nirengeki/boss.png)"
 Link:
-    - "[Youtube](https://www.youtube.com/watch?v=b9_Vh9h3Ohw)"
-    - "[Soundcloud](https://www.soundcloud.com/tfx-st)"
-    - "[Pouet](https://www.pouet.net/prod.php?which=90528)"
+  - "[Itch.io](https://saltmonger.itch.io/nirgengeki)"
+  - "[Jam Page](https://itch.io/jam/gmtk-2021)"
 ---
-### tic80 demo
+Twin stick(ish) space shooter.
 
-Compofiller Compound is the miracle cream that will solve all your problems! This is a tic80 demo that was written in a week, in place of a much larger demo that was not ready for entry into a competition. This particular entry was finished in the hardware room of Xenium 2019 in Katowice, Poland, just 10 minutes before deadline. It placed 2nd out of 6 entries in the Wild Compo, which includes all entries that don't fit another competition (rendered animations, films and videos, or people dancing live). This demo is available on pouet, where it can be downloaded as the original party archive which includes the tools necessary to run it.
+TEAM:
+-  tfx: Code, Music
+- Zope: Code, VFX
+- SonderGaming: Code, Art
+- Hiij: Art
+- Xuubasa: Code
 
+Nirengeki was developed for the GMTK 2021 Game Jam, an absolutely massive, 2 day long game jam.  The theme was "Joined Together."  We developed a top down space shooter where the player controls both the main ship, responsible for shooting enemies, and a drone that collects pickups to aid the ship.
+
+This jam was a lot of fun to work on with the feedback loop between design, development, and polish being super quick.  Despite our ongoing effort to increase the amount of time between code freeze and submission deadline, this game was submitted less than 30 minutes from deadline.
+
+I wrote the music for this game on using a mixture of SynthMaster One and SythMaster 2.9, as well as the KORG M1 Plugin.

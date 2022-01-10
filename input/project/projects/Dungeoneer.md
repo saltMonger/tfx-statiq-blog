@@ -2,7 +2,7 @@
 Tagline:  7 Day Game Jam // Unity
 Published: 2021-07-24
 Image: assets/img/projects/dungeoneer/scroll-crop.gif
-HeroImage: 
+HeroImage: assets/img/projects/dungeoneer/hero.png
 Type: Project
 Category: 
   - game
@@ -20,7 +20,7 @@ Link:
 Dungeon cleanup simulation.
 
 TEAM:
--  tfx: Code, Music, UI
+- tfx: Code, Music, UI
 - Zope: Code, VFX
 - SonderGaming: Code, Art
 - Lou: Art, Design 

@@ -1,14 +1,34 @@
 ﻿Title: Iron Drought
-Published: 2021-12-14
+Tagline:  14 Day Game Jam // Unity
+Published: 2021-10-11
 Image: assets/img/projects/irondrought/iron-crop.gif
+HeroImage: assets/img/projects/irondrought/ironDroughtBig.png
 Type: Project
-Category: game
+Category: 
+  - soundtrack
+Gallery:
+  - "[Player1][Destroying enemies in the first level](assets/img/projects/irondrought/iron.gif)"
+  - "[Player2][Album art](assets/img/projects/irondrought/ironDroughtAlbum.png)"
+  - "[Player3][A player creates a fast, railgun based mech](assets/img/projects/irondrought/custom1.png)"
+  - "[Player4][A player creates a heavy, tank based mech](assets/img/projects/irondrought/custom2.png)"
+  - "[Player5][Taking out shield generators paves the way for the final showdown...](assets/img/projects/irondrought/stage3.png)"
+  - "[Player6][Shields and enemy mechs block progress](assets/img/projects/irondrought/stage1-1.png)"
 Link:
-    - "[Youtube](https://www.youtube.com/watch?v=b9_Vh9h3Ohw)"
-    - "[Soundcloud](https://www.soundcloud.com/tfx-st)"
-    - "[Pouet](https://www.pouet.net/prod.php?which=90528)"
+  - "[Itch.io](https://sondergaming.itch.io/irondrought)"
+  - "[Soundtrack Bandcamp](https://seawaves.bandcamp.com/album/iron-drought-ost)"
+  - "[Jam Page](https://itch.io/jam/mechjam2)"
 ---
-### tic80 demo
+High action, arcade mech shooter.
 
-Compofiller Compound is the miracle cream that will solve all your problems! This is a tic80 demo that was written in a week, in place of a much larger demo that was not ready for entry into a competition. This particular entry was finished in the hardware room of Xenium 2019 in Katowice, Poland, just 10 minutes before deadline. It placed 2nd out of 6 entries in the Wild Compo, which includes all entries that don't fit another competition (rendered animations, films and videos, or people dancing live). This demo is available on pouet, where it can be downloaded as the original party archive which includes the tools necessary to run it.
+TEAM:
+-  tfx: Music
+- SonderGaming: Code
+- Matt J Hart: SFX, Music
+- Alex R: Code
+- Hiij: Art
+- NeoAwesomeon: Art, Voice Over
+- EnterLightning: Writing
 
+Iron Drought was developed for the second Mech Jam game jam.  Adhering to the rules of "make a game about mechs," the team created a game in the style of _Armored Core_ and _Mech Warrior_.  The game was awarded first place for Fun Factor, and scored highly in Audio and Overall.
+
+I contributed a 5 tracks for this game, with additional guitar tracks from Matt J Hart.  The music was produced in ~10 days.

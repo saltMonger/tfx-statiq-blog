@@ -12,7 +12,7 @@ Gallery:
   - "[Player3][Desert metal refineries, an upgraded market, and the trade interface being set](assets/img/projects/botbuilder/marketMode.png)"
 Link:
   - "[Battle of the Bits](https://battleofthebits.org/arena/Entry/BotBuilder/35912/)"
-  - "[itch io](https://metriczero.itch.io/lute-this)"
+  - "[Itch.io](https://saltmonger.itch.io/botbuilder)"
 ---
 BotBuilder (Pronounced "bot-buh-builder") is a somewhat arcane "city builder" game where the player must produce a golden badge without running out of resources.
 

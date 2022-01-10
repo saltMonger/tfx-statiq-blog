@@ -2,6 +2,7 @@
 Tagline:  party code // tic80 production
 Published: 2019-09-01
 Image: assets/img/projects/cfc/aycetoothpaste-crop.gif
+HeroImage: assets/img/projects/cfc/hero.png
 Type: Project
 Category: 
   - demo

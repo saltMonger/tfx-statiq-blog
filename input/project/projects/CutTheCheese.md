@@ -2,13 +2,17 @@
 Tagline: 10 Day Game Jam // Unity
 Published: 2021-05-03
 Image: assets/img/projects/cheese/cheese-crop.gif
+HeroImage: assets/img/projects/cheese/hero.png
 Type: Project
 Category: 
   - game
 Gallery:
   - "[Player1][Unprocessed processed \"cheese\" cubes roll down the line...](assets/img/projects/cheese/cheese.gif)"
+  - "[Player2][A driller \"swisses\" cheese cubes](assets/img/projects/cheese/driller.png)"
+  - "[Player3][The conveyor can be stopped, but only a certain number of times](assets/img/projects/cheese/control.png)"
+
 Link:
-  - "[itch io](https://zoped.itch.io/who-cut-the-cheese)"
+  - "[Itch.io](https://zoped.itch.io/who-cut-the-cheese)"
 ---
 Cut the Cheese Simulator is a tongue in cheek not-quite-cheese production simulator.
 

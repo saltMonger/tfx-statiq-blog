@@ -1,14 +1,25 @@
 ﻿Title: Silhouette
-Published: 2021-12-14
+Tagline:  3 Day Game Jam // Unity
+Published: 2020-08-02
 Image: assets/img/projects/silhouette/sil-crop.gif
+HeroImage: assets/img/projects/silhouette/hero.png
 Type: Project
-Category: game
+Category: 
+  - game
+Gallery:
+  - "[Player1][The title sequence uses the shadow casting effect](assets/img/projects/silhouette/title.gif)"
+  - "[Player2][The game takes place on a wall](assets/img/projects/silhouette/environment.png)"
+  - "[Player3][Moving changes the environment](assets/img/projects/silhouette/movement.gif)"
 Link:
-    - "[Youtube](https://www.youtube.com/watch?v=b9_Vh9h3Ohw)"
-    - "[Soundcloud](https://www.soundcloud.com/tfx-st)"
-    - "[Pouet](https://www.pouet.net/prod.php?which=90528)"
+  - "[Itch.io](https://metriczero.itch.io/silhouette)"
 ---
-### tic80 demo
+Shadow based platforming experiment.
 
-Compofiller Compound is the miracle cream that will solve all your problems! This is a tic80 demo that was written in a week, in place of a much larger demo that was not ready for entry into a competition. This particular entry was finished in the hardware room of Xenium 2019 in Katowice, Poland, just 10 minutes before deadline. It placed 2nd out of 6 entries in the Wild Compo, which includes all entries that don't fit another competition (rendered animations, films and videos, or people dancing live). This demo is available on pouet, where it can be downloaded as the original party archive which includes the tools necessary to run it.
+TEAM:
+- tfx: Code, Music
+- Metric: Art
+- Searanger: Art, Level Design
+- Zope: Code, Design
+
+Silhouette was designed for the 3 day Dev Atlas #2 jam, with heavy emphasis on playing with light sources.  The game uses home spun technology which transforms projected shadows into colliders in real time.  This enables creative environment and level design, where the stage moves and hazards evolve as the player moves their camera.
 

@@ -35,7 +35,7 @@ Seems pretty normal - there front matter in this piece of code has a few special
 
 Except it doesn't do that.
 
-Or at least, that's what I discovered when I tinkered for an hour or two.  I'm sure there's an actual answer to this, but it was creating the properly distirbuted folders fine... just never actually emitting blog posts or `index.html` files there to server to a web browser.
+Or at least, that's what I discovered when I tinkered for an hour or two.  I'm sure there's an actual answer to this, but it was creating the properly distributed folders fine... just never actually emitting blog posts or `index.html` files there to server to a web browser.
 
 Feeling a bit lost, I remember that one of the brief bits of documentation I read about Statiq.Web was about proper `Archives`.  Helpfully, too, the categories sidebar seemed to send you to a /categories/ path quite fine... and that happens to be an archive too!  Neat, let's check that out.
 
@@ -118,3 +118,4 @@ This is the month index: for a specific year it will produce folders 01 - 12, su
 One thing to note is that the `ArchiveKey` is just a simple value.  Because the FrontMatter of this file type allows C# scripts to be used, I've specifically processed the `Published` configuration so that we can pull out what we need (that is, the year and month).
 
 I also created a year-level archive that does the same thing, but lists all articles published that year.  This will let those side bar links finally shine!
+ine!

@@ -1,5 +1,5 @@
 ﻿Title: Meat Meets Mouth
-Tagline: 7 Hour Jam / Game Maker 
+Tagline: 7 Hour Jam // Game Maker 
 Published: 2019-09-14
 Image: assets/img/projects/mmm/munch-crop.gif
 HeroImage: assets/img/projects/mmm/munch.png
@@ -10,7 +10,7 @@ Gallery:
   - "[Player1][The mouth hungers](assets/img/projects/mmm/munch.gif)"
   - "[Player2][A winning game](assets/img/projects/mmm/EatMe.png)"
 Link:
-  - "[itch io](https://saltmonger.itch.io/meat-meets-mouth)"
+  - "[Itch.io](https://saltmonger.itch.io/meat-meets-mouth)"
 ---
 Meat Meets Mouth is a bizarre 2D physics game for Windows computers.
 
