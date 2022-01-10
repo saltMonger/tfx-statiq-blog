@@ -6,7 +6,6 @@
     
     let img = $('.tfx-exp-img');
     $('.tfx-exp-img').each(function() {
-        console.log(this.id);
         let imgContainer = document.getElementById(this.id);
         imgContainer.addEventListener("click", modalize)
     });
