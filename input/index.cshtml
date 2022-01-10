@@ -114,7 +114,7 @@ Title: => $"{Constants.SiteTitle}"
                     <article class="post">
                         <header>
                             <h1 itemprop="headline name">
-                                <a class="tfx-white-link" itemprop="url" href="@Context.GetLink(post).Substring(1)">@post.GetString("Title")</a>
+                                <a class="tfx-white-link" itemprop="url" href="@(Context.GetLink(post).Substring(1) + ".html")">@post.GetString("Title")</a>
                             </h1>
                             <h3 class="bh">
                                 <time datetime="@post.GetString("Published")" itemprop="datePublished">@post.GetDateTime("Published").ToString("MMMM dd, yyyy")</time>
