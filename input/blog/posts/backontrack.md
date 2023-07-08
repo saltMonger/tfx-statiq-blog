@@ -10,13 +10,13 @@ Life has been fast and things are changing so it's time to return to and dust th
 Here are some quick patch notes for the website:
 - Add left and right gallery transport controls for projects
 - 7 new project entries!
-	- [Hansel]()
-	- [Layover]()
-	- [Kenneymari]()
-	- [ELEMENTAL]()
-	- [SlimeBall]()
-	- [Bullet Hell 2023]()
-	- [Hatch Patch]()
+	- [Hansel](/project/hansel.html)
+	- [Layover](/project/layover.html)
+	- [Kenneymari](/project/kenneymari.html)
+	- [ELEMENTAL](/project/elemental.html)
+	- [SlimeBall](/project/slimeball.html)
+	- [Bullet Hell 2023](/project/bullethell2023.html)
+	- [Hatch Patch](/project/hatchpatch.html)
 
 Some planned future articles:
 - How to host Blazor web-apps on Itch.io
