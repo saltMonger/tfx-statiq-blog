@@ -479,6 +479,38 @@ body.main {
         cursor: pointer;
     }
 
+.left-modal {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    color: #f1f1f1;
+    font-size: 400%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .left-modal:hover, .left-modal:focus {
+        color: teal;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.right-modal {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    color: #f1f1f1;
+    font-size: 400%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .right-modal:hover, .right-modal:focus {
+        color: teal;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
 .tfx-exp-img {
     max-width: 100%;
     cursor: pointer;

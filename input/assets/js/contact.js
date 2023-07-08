@@ -6,6 +6,8 @@
     function handleSubmit(e) {
         e.preventDefault();
         e.stopPropagation();
+        let submit = document.querySelector("#submitButton")
+        submit.setAttribute('disabled', 'disabled');
         let request = new XMLHttpRequest();
         let messageData = {
             email: document.getElementById("emailInput").value,
@@ -22,6 +24,7 @@
                 }
                 else {
                     $('#errorToast').toast('show');
+                    submit.removeAttribute('disabled');
                 }
             }
         }
