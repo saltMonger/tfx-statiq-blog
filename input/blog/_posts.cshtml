@@ -14,11 +14,11 @@
                 <h1 itemprop="headline name">
                     <a class="tfx-white-link" itemprop="url" href="@($"{Context.GetLink(post).Substring(1)}.html")">@post.GetString("Title")</a>
                 </h1>
-                <h3 class="bh">
+                <h3>
                     <time datetime="@post.GetString("Published")" itemprop="datePublished">@post.GetDateTime("Published").ToString("MMMM dd, yyyy")</time>
                     @if (topicDocument != null)
                     {
-                        <a href="@(topicDocument.GetLink())"><span class="badge badge-light">@topicDocument.GetTitle()</span></a>
+                        <a href="@(topicDocument.GetLink())"><span class="tfx-badge-light">@topicDocument.GetTitle()</span></a>
                     }
                 </h3>
             </header>

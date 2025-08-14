@@ -1,14 +1,14 @@
 ﻿Title: Lute This!
 Tagline: 3 Day Jam // Unreal Engine
 Published: 2020-05-11
-Image: assets/img/projects/lute/lute-crop.gif
+Image: assets/img/projects/lute/lute-crop
 HeroImage: assets/img/projects/lute/lute.png
 Type: Project
 Category: 
   - game
   - soundtrack
 Gallery:
-  - "[Player1][An easy chart](assets/img/projects/lute/lute.gif)"
+  - "[Player1][An easy chart](assets/img/projects/lute/lute)"
   - "[Player2][Select a song](assets/img/projects/lute/menu.png)"
   - "[Player3][Coins rain down on the player](assets/img/projects/lute/makeItRain.png)"
 Link:

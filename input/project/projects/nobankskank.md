@@ -1,15 +1,15 @@
 ﻿Title: No Bank Skank
 Tagline: party code // ATARI 800 XL production
 Published: 2018-11-03
-Image: assets/img/projects/nbs/metaBalls-crop.gif
+Image: assets/img/projects/nbs/metaBalls-crop
 HeroImage: assets/img/projects/nbs/hero.png
 Type: Project
 Category: 
   - demo
 Gallery:
-  - "[Demo1][Meta balls framed by an AYCE design](assets/img/projects/nbs/metaBalls.gif)"
+  - "[Demo1][Meta balls framed by an AYCE design](assets/img/projects/nbs/metaBalls)"
   - "[Demo2][The pouet attract image - multiple screens from the demo](assets/img/projects/nbs/multiScreen.png)"
-  - "[Demo3][A twister flanked by a larger twister](assets/img/projects/nbs/twister.gif)"
+  - "[Demo3][A twister flanked by a larger twister](assets/img/projects/nbs/twister)"
 Link:
   - "[Youtube](https://www.youtube.com/watch?v=mbh7YeM56ck)"
   - "[Soundcloud](https://soundcloud.com/zlewyjuzjado/czujesztmpt)"

@@ -1,13 +1,13 @@
 ﻿Title: Estranged
 Tagline: 3 Day Jam // Unity
 Published: 2020-10-23
-Image: assets/img/projects/estranged/estranged-crop.gif
+Image: assets/img/projects/estranged/estranged-crop
 HeroImage: assets/img/projects/estranged/hero.png
 Type: Project
 Category: 
   - game
 Gallery:
-  - "[Player1][The player embarks on their journey](assets/img/projects/estranged/estranged.gif)"
+  - "[Player1][The player embarks on their journey](assets/img/projects/estranged/estranged)"
   - "[Player2][The player readies the spaceship](assets/img/projects/estranged/spaceship.png)"
   - "[Player3][The world awaits...](assets/img/projects/estranged/sky.png)"
 Link:

@@ -1,12 +1,33 @@
 ﻿@model IDocument
-<article class="col-md-4 d-flex align-self-stretch tfx-hover-trans">
-	<a class="d" href="@($"{Context.GetLink(Model)}.html")">
-		<div class="tfx-card align-self-stretch" >
+<article class="tfx-row-card tfx-hover-trans" style="align-self: stretch;">
+	<a href="@($"{Context.GetLink(Model)}.html")">
+		<div class="tfx-card">
 			<div class="tfx-card-header tfx-card-header-title">
 				@Model.GetTitle()
 			</div>
 			<div class="tfx-card-body">
-				<img style="max-height: 300px !important;" src="@Model.GetString("Image")" />
+				@if (Model.GetString("Image").Split(".").Length > 1)
+				{
+					<picture style="max-height: 300px !important; justify-content: center;">
+						<img style="max-height: 300px !important; max-width: 100%;" src="@Model.GetString("Image")" />
+					</picture>
+				}
+				else
+				{
+					var imagePath = Model.GetString("Image").Split("/").ToList();
+					var gifPath = imagePath.ToList();
+					gifPath.Insert(gifPath.Count - 1, "gif");
+					var webpPath = imagePath.ToList();
+					webpPath.Insert(webpPath.Count - 1, "webp");
+					var gif = string.Join('/', gifPath) + ".gif";
+					var webp = string.Join('/', webpPath) + ".webp";
+
+					<picture style="justify-content: center; max-width: 100%;">
+						<source style="max-height: 300px !important; max-width: 100%;" srcset="@webp" />
+						<source style="max-height: 300px !important; max-width: 100%;" srcset="@gif" />
+						<img style="max-height: 300px !important; max-width: 100%;" src="@Model.GetString("Image")" />
+					</picture>
+				}
 			</div>
 		</div>
 	</a>

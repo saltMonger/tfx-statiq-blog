@@ -1,16 +1,16 @@
 ﻿Title: Dungeoneer
 Tagline:  7 Day Game Jam // Unity
 Published: 2021-07-24
-Image: assets/img/projects/dungeoneer/scroll-crop.gif
+Image: assets/img/projects/dungeoneer/scroll-crop
 HeroImage: assets/img/projects/dungeoneer/hero.png
 Type: Project
 Category: 
   - game
   - soundtrack
 Gallery:
-  - "[Player1][A scroll floats nearby, promising power...](assets/img/projects/dungeoneer/scroll.gif)"
+  - "[Player1][A scroll floats nearby, promising power...](assets/img/projects/dungeoneer/scroll)"
   - "[Player2][Album art featuring the Mystix sigil](assets/img/projects/dungeoneer/dungeoneer2.png)"
-  - "[Player3][Vlad wants a blood snack](assets/img/projects/dungeoneer/vlad1.gif)"
+  - "[Player3][Vlad wants a blood snack](assets/img/projects/dungeoneer/vlad1)"
 Link:
   - "[Itch.io](https://saltmonger.itch.io/dungeoneer)"
   - "[Youtube Trailer](https://youtu.be/o_lmlnmiF38)"

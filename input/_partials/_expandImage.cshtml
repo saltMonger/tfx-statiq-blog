@@ -1,4 +1,25 @@
 ﻿@inherits StatiqRazorPage<(string imgId, string caption, string link)>
-<div class="col-md-4">
-    <img id="@Model.imgId" alt="@Model.caption" class="tfx-exp-img" src="@Model.link"/>
+<div class="tfx-row-card">
+    @if (Model.link.Split(".").Length > 1) 
+    {
+        <picture class="tfx-exp-pic" id="@Model.imgId">
+            <img class="tfx-exp-img" alt="@Model.caption" src="@Model.link" />
+        </picture>
+    }
+    else 
+    {
+        var path = Model.link.Split("/").ToList();
+        var gifPath = path.ToList();
+        gifPath.Insert(gifPath.Count - 1, "gif");
+        var webpPath = path.ToList();
+        webpPath.Insert(webpPath.Count - 1, "webp");
+        var gif = string.Join('/', gifPath) + ".gif";
+        var webp = string.Join('/', webpPath) + ".webp";
+
+        <picture class="tfx-exp-pic" id="@Model.imgId">
+            <source srcset="@webp" />
+            <source srcset="@gif" />
+            <img alt="@Model.caption" class="tfx-exp-img" />
+        </picture>
+    }
 </div>

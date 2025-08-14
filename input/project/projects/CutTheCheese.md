@@ -1,13 +1,13 @@
 ﻿Title: Cut the Cheese Simulator
 Tagline: 10 Day Game Jam // Unity
 Published: 2021-05-03
-Image: assets/img/projects/cheese/cheese-crop.gif
+Image: assets/img/projects/cheese/cheese-crop
 HeroImage: assets/img/projects/cheese/hero.png
 Type: Project
 Category: 
   - game
 Gallery:
-  - "[Player1][Unprocessed processed \"cheese\" cubes roll down the line...](assets/img/projects/cheese/cheese.gif)"
+  - "[Player1][Unprocessed processed \"cheese\" cubes roll down the line...](assets/img/projects/cheese/cheese)"
   - "[Player2][A driller \"swisses\" cheese cubes](assets/img/projects/cheese/driller.png)"
   - "[Player3][The conveyor can be stopped, but only a certain number of times](assets/img/projects/cheese/control.png)"
 

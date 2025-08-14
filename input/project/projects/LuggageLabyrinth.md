@@ -1,14 +1,14 @@
 ﻿Title: Luggage Labyrinth
 Tagline:  8 Day Game Jam // Unity
 Published: 2021-04-07
-Image: assets/img/projects/luggage/lug-crop.gif
+Image: assets/img/projects/luggage/lug-crop
 HeroImage: assets/img/projects/luggage/hero.png
 Type: Project
 Category: 
   - game
   - soundtrack
 Gallery:
-  - "[Player1][A battle commences](assets/img/projects/luggage/lug.gif)"
+  - "[Player1][A battle commences](assets/img/projects/luggage/lug)"
   - "[Player2][The player is attacked by a troop of possessed shirts](assets/img/projects/luggage/shirts1.png)"
   - "[Player3][A gauntlet to the exit](assets/img/projects/luggage/exit.png)"
 Link:

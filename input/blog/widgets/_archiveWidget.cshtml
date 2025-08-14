@@ -1,5 +1,5 @@
 <div class="tfx-card">
-    <div class="tfx-card-header"><span class="oi oi-calendar"></span> Archives</div>
+    <div class="tfx-card-header">Archives</div>
     <div class="tfx-card-body">
         @foreach (IGrouping<int, IDocument> yearGroup in Outputs
            .FromPipeline(nameof(Content))

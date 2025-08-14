@@ -1,15 +1,15 @@
 Title: Kenneymari
 Tagline: 48 Hour Jam // Unity
 Published: 2022-08-21
-Image: assets/img/projects/kenneymari/kenney.gif
+Image: assets/img/projects/kenneymari/kenney
 HeroImage: assets/img/projects/kenneymari/hero.png
 Type: Project
 Category:
 - game
 Gallery:
-- "[Kennymari1][Jumping away from meteors saves your stash](assets/img/projects/kenneymari/kenneymari1.gif)"
+- "[Kennymari1][Jumping away from meteors saves your stash](assets/img/projects/kenneymari/kenneymari1)"
 - "[Kennymari2][The player collects junk in the downtown area](assets/img/projects/kenneymari/kenneymari3.png)"
-- "[Kennymari3][A full worm is a happy worm](assets/img/projects/kenneymari/kenneymari2.gif)"
+- "[Kennymari3][A full worm is a happy worm](assets/img/projects/kenneymari/kenneymari2)"
 Link:
 - "[Itch.io](https://zoped.itch.io/kenneymari)"
 - "[Jam Page](https://itch.io/jam/kenney-jam-2022)"

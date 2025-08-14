@@ -1,6 +1,6 @@
 ﻿@using System.Text.RegularExpressions
 @{
-    Layout = @"/_layout.cshtml";
+    Layout = @"/project/_project_page_layout.cshtml";
 }
 @{
     List<string> categories = Model.GetList<string>("Category")?.ToList() ?? new List<string>() { Model.GetString("Category")};
@@ -17,7 +17,7 @@
                             <time datetime="@Model.GetString("Published")" itemprop="datePublished">@Model.GetDateTime("Published").ToString("MMMM dd, yyyy")</time>
                             @foreach (var topic in topicDocument)
                             {
-                                <a href="@($"{Constants.ProjectPath}/categories/{topic.GetString("Link")}/")"><span class="badge badge-light">@topic.GetString("Title")</span></a>
+                                <a href="@($"{Constants.ProjectPath}/categories/{topic.GetString("Link")}/")"><span class="tfx-badge-light">@topic.GetString("Title")</span></a>
                             }
                         </h4>
                     </header>
@@ -65,7 +65,11 @@
 
 <div class="tfx-modal" id="modal">
     <span class="close-modal">&times;</span>
-    <img class="tfx-modal-content" id="modalimg">
+    <div style="margin: auto; max-width: 80%; text-align: center;">
+        <picture class="tfx-modal-content" id="modalimg">
+            <img />
+        </picture>
+    </div>
     <span class="left-modal">&lt;</span>
     <span class="right-modal">&gt;</span>
     <div id="caption"></div>

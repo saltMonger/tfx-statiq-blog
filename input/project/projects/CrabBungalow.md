@@ -1,14 +1,14 @@
 ﻿Title: Crab Bungalow
 Tagline:  7 Day Game Jam // Unity
 Published: 2021-02-21
-Image: assets/img/projects/crab/crab-crop.gif
+Image: assets/img/projects/crab/crab-crop
 HeroImage: assets/img/projects/crab/env1.png
 Type: Project
 Category: 
   - game
 Gallery:
   - "[Player1][Crabs massing to break wall down](assets/img/projects/crab/wall1.png)"
-  - "[Player2][The ocean and the island](assets/img/projects/crab/crab.gif)"
+  - "[Player2][The ocean and the island](assets/img/projects/crab/crab)"
   - "[Player3][Crabs transporting fish around a lava lake](assets/img/projects/crab/lava1.png)"
 Link:
   - "[Itch.io](https://saltmonger.itch.io/crab-bungalow)"

@@ -1,15 +1,15 @@
 ﻿Title: Sijofsifsoeife
 Tagline:  party code // tic80 production
 Published: 2019-04-14
-Image: assets/img/projects/sij/plasmacubes-crop.gif
+Image: assets/img/projects/sij/plasmacubes-crop
 HeroImage: assets/img/projects/sij/hero.png
 Type: Project
 Category: 
   - demo
 Gallery:
-  - "[Demo1][Texture mapped cubes with a plasma effect](assets/img/projects/sij/plasmacubes.gif)"
-  - "[Demo2][A fly through a field of squares](assets/img/projects/sij/flythrough.gif)"
-  - "[Demo3][Staff roll with spline effects](assets/img/projects/sij/credits.gif)"
+  - "[Demo1][Texture mapped cubes with a plasma effect](assets/img/projects/sij/plasmacubes)"
+  - "[Demo2][A fly through a field of squares](assets/img/projects/sij/flythrough)"
+  - "[Demo3][Staff roll with spline effects](assets/img/projects/sij/credits)"
 Link:
     - "[Youtube](https://www.youtube.com/watch?v=sZrpDHUPR2o)"
     - "[tic80 online](https://tic80.com/play?cart=829)"

@@ -3,23 +3,20 @@
     <head>
         @Html.Partial("_partials/_head")
         @RenderSection("head", required: false)
-        <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
     </head>
     <body class="main">
         @Html.Partial("_partials/_header")
-        <div id="site_container" class="container-fluid flex-fill">
-            <div class="row">
-                <main id="page_container" role="main" class="col">
-                    <section class="body-section">
-                        <div class="body-container">
-                                    @RenderBody()
-                        </div>
-                    </section>
-                </main>
-            </div>
+        <div id="site_container" class="tfx-container-fluid tfx-fill">
+            <main id="page_container" role="main">
+                <section class="body-section">
+                    <div class="body-container">
+                                @RenderBody()
+                    </div>
+                </section>
+            </main>
         </div>
-    </body>
-        <footer id="footer">
+    <footer id="footer">
         @Html.Partial("_partials/_footer")
     </footer>
+    </body>
 </html>

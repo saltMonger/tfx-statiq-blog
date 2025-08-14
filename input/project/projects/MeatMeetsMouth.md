@@ -1,13 +1,13 @@
 ﻿Title: Meat Meets Mouth
 Tagline: 7 Hour Jam // Game Maker 
 Published: 2019-09-14
-Image: assets/img/projects/mmm/munch-crop.gif
+Image: assets/img/projects/mmm/munch-crop
 HeroImage: assets/img/projects/mmm/munch.png
 Type: Project
 Category: 
   - game
 Gallery: 
-  - "[Player1][The mouth hungers](assets/img/projects/mmm/munch.gif)"
+  - "[Player1][The mouth hungers](assets/img/projects/mmm/munch)"
   - "[Player2][A winning game](assets/img/projects/mmm/EatMe.png)"
 Link:
   - "[Itch.io](https://saltmonger.itch.io/meat-meets-mouth)"

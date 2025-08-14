@@ -1,14 +1,14 @@
 ﻿Title: Forgemaster
 Tagline:  35 Day Game Jam // Unity
 Published: 2021-12-26
-Image: assets/img/projects/forgemaster/demo-crop.gif
+Image: assets/img/projects/forgemaster/demo-crop
 HeroImage: assets/img/projects/forgemaster/hero.png
 Type: Project
 Category: 
   - game
 Gallery:
   - "[Player1][The dungeon beckons...](assets/img/projects/forgemaster/entrance.png)"
-  - "[Player2][The barrows await...](assets/img/projects/forgemaster/demo.gif)"
+  - "[Player2][The barrows await...](assets/img/projects/forgemaster/demo)"
   - "[Player3][Combat is quick and dangerous](assets/img/projects/forgemaster/fighting.png)"
 Link:
   - "[Itch.io](https://zoped.itch.io/forgemaster)"

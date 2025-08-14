@@ -12,11 +12,10 @@ ArchiveTitle: => Outputs[$"{Constants.ProjectPath}/categories/{GetString("GroupK
     {
     <h1>@(Outputs[$"{Constants.ProjectPath}/categories/{Document.GetList<string>(Keys.GroupKey).First()}.yml"].First().GetString("Title"))</h1>
     <p>@(Outputs[$"{Constants.ProjectPath}/categories/{Document.GetList<string>(Keys.GroupKey).First()}.yml"].First().GetString("Description"))</p>
-    <hr class="my-4" style="border-color: #eee;" />
+    <hr class="tfx-my-4" style="border-color: #eee;" />
     @Html.Partial($"/{Constants.ProjectPath}/_projects.cshtml", Document.GetChildren())
-}
+    }
 else
 {
     <div>No projects yet!</div>
-    @Html.Partial($"/{Constants.ProjectPath}/_projects.cshtml", Document.GetChildren())
 }

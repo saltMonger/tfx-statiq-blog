@@ -1,13 +1,13 @@
 ﻿Title: "Nirengeki: Double Strike"
 Tagline:  2 Day Game Jam // Unity
 Published: 2021-06-13
-Image: assets/img/projects/nirengeki/niren-crop.gif
+Image: assets/img/projects/nirengeki/niren-crop
 HeroImage: assets/img/projects/nirengeki/hero.png
 Type: Project
 Category: 
   - game
 Gallery:
-  - "[Player1][Bullets from bizarre enemies fill space](assets/img/projects/nirengeki/niren.gif)"
+  - "[Player1][Bullets from bizarre enemies fill space](assets/img/projects/nirengeki/niren)"
   - "[Player2][Title screen](assets/img/projects/nirengeki/title.png)"
   - "[Player3][A powerful boss challenges the player](assets/img/projects/nirengeki/boss.png)"
 Link:

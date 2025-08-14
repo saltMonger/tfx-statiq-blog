@@ -4,11 +4,10 @@
         @Html.Partial("_partials/_head")
         @Html.Partial("_partials/_contactHead")
         @RenderSection("head", required: false)
-        <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
     </head>
     <body class="main">
         @Html.Partial("_partials/_header")
-        <main id="page_container" role="main" style="display: flex; flex-wrap: wrap;">
+    <main id="front_page_container" role="main" style="display: flex; flex-wrap: wrap; width: 100%;">
             <section class="body-section">
                 <div class="body-container">
                     @RenderBody()

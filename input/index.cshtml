@@ -7,45 +7,53 @@ Title: => $"{Constants.SiteTitle}"
 ---
 @model IDocument
 <div class="tfx-purple-section">
-    <div class="container-fluid">
-        <h1 class="display-4 text-center">I'm tfx</h1>
-        <div class="row align-items-center justify-content-center text-center">
-            <div class="col-md-4">
+    <div class="tfx-container-fluid">
+        <h1 class="tfx-big-text-4 text-center">I'm tfx</h1>
+        <div class="text-center">
+            <div>
                 <img style="border-radius: 50%;" src="assets/img/me.png" />
             </div>
         </div>
-        <hr class="my-4">
+        <hr class="
+4" style="opacity: 0%;">
     </div>
 </div>
 <div class="tfx-teal-section">
-    <div class="container-fluid">
-        <h2 class="display-4 text-center">I'm a programmer</h2>
-        <hr class="my-4" />
-        <div class="row">
-            <div class="text-center col-md-8 offset-md-2 tfx-article-text">
+    <div class="tfx-container-fluid">
+        <h2 class="tfx-big-text-4 text-center">I'm a programmer</h2>
+        <hr class="tfx-my-4" />
+        <div class="tfx-centered-presentation-row">
+            <div class="text-center tfx-article-text">
                 <p>I'm a professional C# developer, but my interests go far beyond my day job. I'm comfortable learning new languages quickly, and trying out interesting platforms.</p>
-                <div class="row mx-1">
-                    <div class="col-md-4 tfx-main-pg-block">
+                <div class="tfx-row-3 text-center">
+                    <div class="tfx-row-card tfx-main-pg-block">
                         <div class="tfx-main-pg-header">
                             <a href="@($"/{Constants.ProjectPath}/categories/demo/")">
-                                <img class="tfx-main-pg-img" src="assets/img/projects/sij/plasmacubes.gif" />
+                                <picture>
+                                    <source srcset="assets/img/projects/sij/webp/plasmacubes.webp" />
+                                    <img class="tfx-main-pg-img" src="assets/img/projects/sij/gif/plasmacubes.gif" />
+                                </picture>
+                                
                                 <div class="tfx-main-pg-img-txt">
                                     <p>Graphics Demos</p>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 tfx-main-pg-block">
+                    <div class="tfx-row-card tfx-main-pg-block">
                         <div class="tfx-main-pg-header">
                             <a href="@($"/{Constants.ProjectPath}/categories/game/")">
-                                <img class="tfx-main-pg-img" src="assets/img/projects/mmm/munch.gif" />
+                                <picture>
+                                    <source srcset="assets/img/projects/mmm/webp/munch.webp" />
+                                    <img class="tfx-main-pg-img" src="assets/img/projects/mmm/gif/munch.gif" />
+                                </picture>
                                 <div class="tfx-main-pg-img-txt">
                                     <p>Games</p>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4 tfx-main-pg-block">
+                    <div class="tfx-row-card tfx-main-pg-block">
                         <div class="tfx-main-pg-header">
                             <a href="@($"/{Constants.ProjectPath}/categories/web/")">
                                 <img class="tfx-main-pg-img" src="assets/img/projects/portfolio/portfolio.png" />
@@ -63,14 +71,14 @@ Title: => $"{Constants.SiteTitle}"
     </div>
 </div>
 <div class="tfx-purple-section">
-    <div class="container-fluid">
-        <h2 class="display-4 text-center">I'm a musician</h2>
-        <hr class="my-4" />
-        <div class="row">
-            <div class="text-center col-md-8 offset-md-2 tfx-article-text">
+    <div class="tfx-container-fluid">
+        <h2 class="tfx-big-text-4 text-center">I'm a musician</h2>
+        <hr class="tfx-my-4" />
+        <div class="tfx-centered-presentation-row">
+            <div class="text-center tfx-article-text">
                 <p>I'm also a musician who enjoys writing authentic chiptune music using real hardware. In the spring and fall I play in local concert bands as a mallet percussionist.</p>
-                <div class="row">
-                    <div class="col-md-6 tfx-main-pg-block">
+                <div class="tfx-row-2">
+                    <div class="tfx-row-card tfx-main-pg-block">
                         <div class="tfx-main-pg-header">
                             <a href="@($"/{Constants.ProjectPath}/categories/soundtrack/")">
                                 <img class="tfx-main-pg-img" src="assets/img/projects/soundtracks/IronDroughtAlbum.png" />
@@ -80,7 +88,7 @@ Title: => $"{Constants.SiteTitle}"
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6 tfx-main-pg-block">
+                    <div class="tfx-row-card tfx-main-pg-block">
                         <div class="tfx-main-pg-header">
                             <a href="@($"/{Constants.ProjectPath}/categories/compotunes/")">
                                 <img class="tfx-main-pg-img" src="assets/img/projects/atariTrilogy/loni_Industry_Plant.png" />
@@ -98,9 +106,9 @@ Title: => $"{Constants.SiteTitle}"
     </div>
 </div>
 <div class="tfx-teal-section">
-    <div class="container-fluid">
-        <h2 class="display-4 text-center">I'm a blogger</h2>
-        <div class="row">
+    <div class="tfx-container-fluid">
+        <h2 class="tfx-big-text-4 text-center">I'm a blogger</h2>
+        <div class="tfx-centered-presentation-row">
             <div class="col-md-8 offset-md-2 tfx-article-text">
                 <p class="text-center">I write about my projects and solutions to problems I encounter.  See my newest posts below.</p>
                 @foreach(var post in Document.GetChildren().Take(3))
@@ -116,11 +124,11 @@ Title: => $"{Constants.SiteTitle}"
                             <h1 itemprop="headline name">
                                 <a class="tfx-white-link" itemprop="url" href="@(Context.GetLink(post).Substring(1) + ".html")">@post.GetString("Title")</a>
                             </h1>
-                            <h3 class="bh">
+                            <h3>
                                 <time datetime="@post.GetString("Published")" itemprop="datePublished">@post.GetDateTime("Published").ToString("MMMM dd, yyyy")</time>
                                 @if (topicDocument != null)
                                 {
-                                    <a href="@(topicDocument.GetLink())"><span class="badge badge-dark">@topicDocument.GetTitle()</span></a>
+                                    <a href="@(topicDocument.GetLink())"><span class="tfx-badge-light">@topicDocument.GetTitle()</span></a>
                                 }
                             </h3>
                         </header>
@@ -143,11 +151,11 @@ Title: => $"{Constants.SiteTitle}"
     </div>
 </div>
 <div class="tfx-purple-section">
-    <div class="container-fluid">
-        <h2 class="display-4 text-center">CONTACT ME</h2>
-        <hr class="my-4" />
-        <div class="row">
-            <div class="col-md-8 offset-md-2 tfx-article-text">
+    <div class="tfx-container-fluid">
+        <h2 class="tfx-big-text-4 text-center">CONTACT ME</h2>
+        <hr class="tfx-my-4" />
+        <div class="tfx-centered-presentation-row">
+            <div class="tfx-article-text">
                 <p class="text-center">
                     Interested in working on some project together? Need music for a game, video, or something else? Just want to tell me you've received an unbelievably complex do-it-yourself meal kit from Japan? Let me know by using the form below.
                 </p>

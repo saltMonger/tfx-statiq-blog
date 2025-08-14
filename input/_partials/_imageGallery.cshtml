@@ -1,6 +1,6 @@
 ﻿@using System.Text.RegularExpressions
 @inherits StatiqRazorPage<List<string>>
-<div class="row align-items-center justify-content-center">
+<div class="tfx-row-3" style="justify-content: center; align-items: center;">
     @foreach (var img in @Model)
     {
         var reg = @"^\[([\w\s\d-./?=#,""]+)\]\[([\w\s\d-./?=#,""]+)\]\(([\w\d-./?=#]+)\)$";

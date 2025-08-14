@@ -1,13 +1,13 @@
 ﻿Title: Layover
 Tagline: 8 Day Jam // Unity
 Published: 2022-06-19
-Image: assets/img/projects/layover/layover.gif
+Image: assets/img/projects/layover/layover
 HeroImage: assets/img/projects/layover/hero.png
 Type: Project
 Category:
 - game
 Gallery:
-- "[Layover1][The player awaits a printed ticket](assets/img/projects/layover/layover1.gif)"
+- "[Layover1][The player awaits a printed ticket](assets/img/projects/layover/layover1)"
 Link:
 - "[Itch.io](https://zoped.itch.io/layover)"
 - "[Jam Page](https://itch.io/jam/lost-relic-games-1)"

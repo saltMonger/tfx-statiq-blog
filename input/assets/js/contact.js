@@ -1,7 +1,29 @@
-﻿$(document).ready(() => {
-    $('.toast').toast({ autohide: true, delay: 3000 });
+﻿function contact() {
+    const toast_transition = 2500;
     let form = document.querySelector("#contact-me");
     form.addEventListener("submit", handleSubmit);
+    let success = document.querySelector("#successToast");
+    let error = document.querySelector("#errorToast");
+   
+    success.classList.add("hide");
+    error.classList.add("hide");
+
+    function hide(e) {
+        e.classList.remove("tfx-fade");
+        e.setAttribute('hidden', '');
+    }
+
+    function startFade(e) {
+        e.classList.add("tfx-fade");
+        e.classList.remove("tfx-show");
+        setTimeout(() => hide(e), toast_transition);
+    }
+
+    function showToast(e) {
+        e.removeAttribute('hidden');
+        e.classList.add("tfx-show");
+        setTimeout(() => startFade(e), toast_transition);
+    }
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -18,20 +40,23 @@
         request.onreadystatechange = function () {
             if (request.readyState === 4) {
                 if (request.status === 200) {
-                    $('#successToast').toast('show');
-                    let submit = document.querySelector("#submitButton")
+                    let submit = document.querySelector("#submitButton");
                     submit.setAttribute('disabled', 'disabled');
+                    showToast(success);
                 }
                 else {
-                    $('#errorToast').toast('show');
                     submit.removeAttribute('disabled');
+                    showToast(error);
                 }
             }
         }
-        request.open("POST", "https://api.tfx.seawavescollective.net/api/contact", true);
+        //"https://api.tfx.seawavescollective.net/api/contact"
+        request.open("POST", "fake", true);
         request.setRequestHeader("Content-type", "application/json");
         let payload = JSON.stringify(messageData)
         request.send(payload);
         return false;
     }
-})
+}
+
+addEventListener("load", (event) => contact());

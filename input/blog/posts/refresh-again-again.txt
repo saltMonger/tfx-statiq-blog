@@ -1,0 +1,38 @@
+﻿Title: Refresh Again Again
+Published: 2025-08-06
+Category: news
+---
+
+Tale as old as time!  I'm back again with a website refresh :)
+
+I've been getting back into working on personal projects and had some time to enjoy hand crafting glorious 2005s era websites, so I wanted to come back and update things.  Since last update, I have forgotten my server credentials (as per usual) and can't seem to get into my box so... time to stand everything back up again.  
+
+I briefly had a fling with "dockerize everything" but I think that's at least a little inappropriate for this kind of thing.  Realistically, I want to be able to online a new box, run a script, and 10 minutes later `rsync` my site up and have it just work.  Still looking for a solution for this, but maybe I'm not looking in the right places...
+
+...anyways, I've completely removed bootstrap, mui.css, and jquery from my website.  For a long while I had only been just barely using bootstrap for layout control and mui for some styling (and also layout control?) with at least one of those libraries requiring JQuery.
+
+This process took a bit, but the vast majority of the work was in extracting a few heavy lifting classes into my own style sheet.  My layouts are now all flexbox or css-grid and I have untangled some nested `<div>` structures that stacked `mui` and `bootstrap` styles on top of each other.  Also, in cleaning up all the imports I used on the website, I found out how to use the syntax highlighter for code blocks and chose a nicer color.  I guess it's useful when you know what tools you're building with :)
+
+While I was tearing the site apart, I took some time to look into optimizing page load times.  I have long ignored pretty much everything about it and while watching the network tab to see just how many kb of transfer I was saving, I noticed that almost all of the traffic was for image and animation assets.  Pages like tfx.seawavescollective.net/projects/ are going to be heavy in general but... 55-60 MBs worth of images loading into a single page is absolutely ridiculous.
+
+I've since reduced the majority of the load by switching over to `.webp`, and it was pretty easy once I found the correct ffmpeg incantation:
+```bash
+ffmpeg -i $1.gif -vcodec webp -loop 0 $1.webp
+```
+I'm lossy compression instead of YUV because, based on the intensive testing of looking at a few animations side by side for a few seconds, I can't really tell the difference.  It's good enough for now and the results are honestly pretty breathtaking.  My heaviest page is down from 60ish MB to 6 MB!
+
+I've had such consternation with the whole `.webp` thing in general after it started rolling out to most websites.  Downloading an image only to get something I can't open in a standard photo viewer, or hotlinking a friend and seeing a broken embed has kept me away.  It seems like support is only getting better for it, and really, I can't argue with the "cost" savings of not shoving huge bloated gifs over the network to somebody.   
+
+So, in interest of better compatibility... I extended my gallery and image serving systems to support gif as a fallback based off of "if the browser wants to serve them", or so I think.  I'm not entirely sure at the moment what sort of queries I can write for `<source>` tags within `<picture>` tags, but I'll experiment at a later date.  I'm thinking of writing a bit of javascript to enrich each picture that'll let you download a `.gif` incase you want to save it since, at least as far as I've been able to tell, `.webp` files are still sort of an issue in photo viewers.  That is, if you really really want to look at a gif of my project offline.
+
+Anyways!  tl;dr release notes:
+- Remove Bootstrap
+- Remove mui.css
+- Remove JQuery/open-iconic
+- Dramatically reduce page weight (55+MB => ~6 MB)
+- Reworked website to be less `<div>` spam
+- Removed lots of random classes that weren't doing anything to attached tags
+
+Stuff on the horizon maybe:
+- golang stuff
+- gameboy (color) stuff

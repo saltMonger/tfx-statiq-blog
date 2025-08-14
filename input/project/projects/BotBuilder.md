@@ -1,13 +1,13 @@
 ﻿Title: BotBuilder
 Tagline: 2 Week Jam // HaxeFlixel
 Published: 2020-06-14
-Image: assets/img/projects/botbuilder/botbb-crop.gif
+Image: assets/img/projects/botbuilder/botbb-crop
 HeroImage: assets/img/projects/botbuilder/hero.png
 Type: Project
 Category: 
 	- game
 Gallery:
-  - "[Player1][A player starts with a blank slate](assets/img/projects/botbuilder/botbb.gif)"
+  - "[Player1][A player starts with a blank slate](assets/img/projects/botbuilder/botbb)"
   - "[Player2][Ore extractor facilities and power plants are deployed](assets/img/projects/botbuilder/buildMode.png)"
   - "[Player3][Desert metal refineries, an upgraded market, and the trade interface being set](assets/img/projects/botbuilder/marketMode.png)"
 Link:

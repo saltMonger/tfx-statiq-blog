@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @Html.Partial("_partials/_head")
+    @Html.Partial("_partials/_modalHead")
+    @RenderSection("head", required: false)
+</head>
+<body class="main">
+    @Html.Partial("_partials/_header")
+    <div id="site_container" class="tfx-container-fluid tfx-fill">
+        <main id="page_container" role="main">
+            <section class="body-section">
+                <div class="body-container">
+                    <div class="tfx-flex-container">
+                        <div class="@(Model.GetBool("HideSidebar") ? "tfx-flex-item-full" : "tfx-flex-item-75")">
+                            @RenderBody()
+                        </div>
+                        @if (!Model.GetBool("HideSidebar"))
+                        {
+                            <div class="tfx-flex-item-full tfx-my-2 tfx-ml-2 tfx-px-3">
+                                @Html.Partial($"/{Constants.ProjectPath}/components/_projectSidebar.cshtml")
+                            </div>
+                        }
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer id="footer">
+        @Html.Partial("_partials/_footer")
+    </footer>
+</body>
+</html>

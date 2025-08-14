@@ -1,14 +1,14 @@
 ﻿Title: Compo Filler Compound
 Tagline:  party code // tic80 production
 Published: 2019-09-01
-Image: assets/img/projects/cfc/aycetoothpaste-crop.gif
+Image: assets/img/projects/cfc/aycetoothpaste-crop
 HeroImage: assets/img/projects/cfc/hero.png
 Type: Project
 Category: 
   - demo
 Gallery:
-  - "[Demo1][Toothpaste twister and long scroller](assets/img/projects/cfc/aycetoothpaste.gif)"
-  - "[Demo1][Real time 3d rasterizer with deformation](assets/img/projects/cfc/jellycube.gif)"
+  - "[Demo1][Toothpaste twister and long scroller](assets/img/projects/cfc/aycetoothpaste)"
+  - "[Demo1][Real time 3d rasterizer with deformation](assets/img/projects/cfc/jellycube)"
 Link:
     - "[Soundcloud](https://soundcloud.com/zlewyjuzjado/zlew-robyn-infomercial0cc-from-compofiller-compound)"
     - "[Pouet](https://www.pouet.net/prod.php?which=82790)"

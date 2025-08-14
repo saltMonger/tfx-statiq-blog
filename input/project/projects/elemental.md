@@ -1,16 +1,16 @@
 ﻿Title: ELEMENTAL
 Tagline: Month Long Jam // Unity
 Published: 2022-11-20
-Image: assets/img/projects/elemental/elemental.gif
+Image: assets/img/projects/elemental/elemental
 HeroImage: assets/img/projects/elemental/hero.png
 Type: Project
 Category:
 - game
 Gallery:
 - "[Elemental1][MURK pleads with the player](assets/img/projects/elemental/elemental1.png)"
-- "[Elemental2][A checkpoint binds the players soul](assets/img/projects/elemental/elemental3.gif)"
+- "[Elemental2][A checkpoint binds the players soul](assets/img/projects/elemental/elemental3)"
 - "[Elemental3][Secret unlockables hide music videos from ELEMENTAL](assets/img/projects/elemental/elemental2.png)"
-- "[Elemental4][The players - or MURKs? - memories are reified in glowing objects](assets/img/projects/elemental/elemental4.gif)"
+- "[Elemental4][The players - or MURKs? - memories are reified in glowing objects](assets/img/projects/elemental/elemental4)"
 Link:
 - "[Itch.io](https://saltmonger.itch.io/elemental)"
 - "[Jam Page](https://itch.io/jam/dk30-fall-2022-game-jam)"

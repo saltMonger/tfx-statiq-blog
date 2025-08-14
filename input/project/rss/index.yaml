@@ -1,0 +1,6 @@
+﻿FeedRss: true
+FeedTitle: => @$"{Constants.ProjectFeedTitle}"
+FeedLink: => @$"{Constants.SiteUri}/{Constants.ProjectPath}/"
+FeedSources: => @$"{Constants.ProjectPath}/projects/*"
+FeedOrderKey: Published
+FeedOrderDescending: true

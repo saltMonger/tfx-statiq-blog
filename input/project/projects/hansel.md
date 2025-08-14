@@ -1,7 +1,7 @@
 ﻿Title: Hansel
 Tagline: 3 Week Jam // Unity
 Published: 2022-01-24
-Image: assets/img/projects/hansel/cover.gif
+Image: assets/img/projects/hansel/cover
 HeroImage: assets/img/projects/hansel/hero.png
 Type: Project
 Category:

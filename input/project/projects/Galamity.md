@@ -1,14 +1,14 @@
 ﻿Title: Galamity
 Tagline:  14 Day Game Jam // Unity
 Published: 2020-08-02
-Image: assets/img/projects/galamity/galamity-crop.gif
+Image: assets/img/projects/galamity/galamity-crop
 HeroImage: assets/img/projects/galamity/Galamity.png
 Type: Project
 Category: 
   - game
   - soundtrack
 Gallery:
-  - "[Player1][The player flys through a swarm of enemies](assets/img/projects/galamity/galamity.gif)"
+  - "[Player1][The player flys through a swarm of enemies](assets/img/projects/galamity/galamity)"
   - "[Player2][Album art for the Galamity release](assets/img/projects/galamity/Galamity_Mk1.png)"
 Link:
   - "[Itch.io](https://saltmonger.itch.io/galamity)"

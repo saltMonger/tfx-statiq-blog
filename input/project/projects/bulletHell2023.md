@@ -1,7 +1,7 @@
 ﻿Title: Bullet Hell 2023
 Tagline: 10 Day Jam // Unity
 Published: 2023-05-08
-Image: assets/img/projects/bulletHell2023/bullethell.gif
+Image: assets/img/projects/bulletHell2023/bullethell
 HeroImage: assets/img/projects/bulletHell2023/hero.png
 Type: Project
 Category:

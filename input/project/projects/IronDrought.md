@@ -1,13 +1,13 @@
 ﻿Title: Iron Drought
 Tagline:  14 Day Game Jam // Unity
 Published: 2021-10-11
-Image: assets/img/projects/irondrought/iron-crop.gif
+Image: assets/img/projects/irondrought/iron-crop
 HeroImage: assets/img/projects/irondrought/ironDroughtBig.png
 Type: Project
 Category: 
   - soundtrack
 Gallery:
-  - "[Player1][Destroying enemies in the first level](assets/img/projects/irondrought/iron.gif)"
+  - "[Player1][Destroying enemies in the first level](assets/img/projects/irondrought/iron)"
   - "[Player2][Album art](assets/img/projects/irondrought/ironDroughtAlbum.png)"
   - "[Player3][A player creates a fast, railgun based mech](assets/img/projects/irondrought/custom1.png)"
   - "[Player4][A player creates a heavy, tank based mech](assets/img/projects/irondrought/custom2.png)"

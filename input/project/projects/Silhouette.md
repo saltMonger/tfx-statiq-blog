@@ -1,15 +1,15 @@
 ﻿Title: Silhouette
 Tagline:  3 Day Game Jam // Unity
 Published: 2020-08-02
-Image: assets/img/projects/silhouette/sil-crop.gif
+Image: assets/img/projects/silhouette/sil-crop
 HeroImage: assets/img/projects/silhouette/hero.png
 Type: Project
 Category: 
   - game
 Gallery:
-  - "[Player1][The title sequence uses the shadow casting effect](assets/img/projects/silhouette/title.gif)"
+  - "[Player1][The title sequence uses the shadow casting effect](assets/img/projects/silhouette/title)"
   - "[Player2][The game takes place on a wall](assets/img/projects/silhouette/environment.png)"
-  - "[Player3][Moving changes the environment](assets/img/projects/silhouette/movement.gif)"
+  - "[Player3][Moving changes the environment](assets/img/projects/silhouette/movement)"
 Link:
   - "[Itch.io](https://metriczero.itch.io/silhouette)"
 ---
